@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public Movie getDetails(){
+    public Movie movie(){
         return new Movie(getActor());
       }
 
