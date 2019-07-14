@@ -19,6 +19,7 @@ public class Main {
         movie.actorInformation();
 
         BeanLifeCycleDemoBean beanLifeCycleDemoBean = context.getBean(BeanLifeCycleDemoBean.class);
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean = context.getBean(BeanPostProcessorDemoBean.class);
         context.close();
     }
 }

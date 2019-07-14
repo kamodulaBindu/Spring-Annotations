@@ -10,7 +10,10 @@ public class AppConfig {
     public Movie movie(){
         return new Movie(getActor());
       }
-
+    @Bean
+    public BeanPostProcessorDemoBean beanPostProcessorDemoBean(){
+        return new BeanPostProcessorDemoBean();
+    }
 
       @Bean
       public Actor getActor(){
