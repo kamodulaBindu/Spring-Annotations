@@ -17,14 +17,5 @@ public class Main {
         Movie movie = context.getBean(Movie.class);
         movie.actorInformation();
 
-
-        BeanFactory factory = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie1 = factory.getBean(Movie.class);
-        movie1.actorInformation();
-
-        BeanDefinitionRegistry beanDefinitionRegistry = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie2 = ((ApplicationContext)beanDefinitionRegistry).getBean(Movie.class);
-        movie2.actorInformation();
-
     }
 }
