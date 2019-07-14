@@ -18,4 +18,10 @@ public class AppConfig {
         return actor;
       }
 
+    @Bean(initMethod="customInit", destroyMethod = "customDestroy")
+    public BeanLifeCycleDemoBean beanLifeCycleDemoBean(){
+        return new BeanLifeCycleDemoBean();
+    }
+
+
 }
